@@ -1,0 +1,11 @@
+C:\Users\wefqi\Lewis\net-programming\windows_form_assignment\windows_form\windows_form\bin\Debug\windows_form.exe.config
+C:\Users\wefqi\Lewis\net-programming\windows_form_assignment\windows_form\windows_form\bin\Debug\windows_form.exe
+C:\Users\wefqi\Lewis\net-programming\windows_form_assignment\windows_form\windows_form\bin\Debug\windows_form.pdb
+C:\Users\wefqi\Lewis\net-programming\windows_form_assignment\windows_form\windows_form\obj\Debug\windows_form.csproj.AssemblyReference.cache
+C:\Users\wefqi\Lewis\net-programming\windows_form_assignment\windows_form\windows_form\obj\Debug\windows_form.csproj.SuggestedBindingRedirects.cache
+C:\Users\wefqi\Lewis\net-programming\windows_form_assignment\windows_form\windows_form\obj\Debug\windows_form.frmdelivery.resources
+C:\Users\wefqi\Lewis\net-programming\windows_form_assignment\windows_form\windows_form\obj\Debug\windows_form.Properties.Resources.resources
+C:\Users\wefqi\Lewis\net-programming\windows_form_assignment\windows_form\windows_form\obj\Debug\windows_form.csproj.GenerateResource.cache
+C:\Users\wefqi\Lewis\net-programming\windows_form_assignment\windows_form\windows_form\obj\Debug\windows_form.csproj.CoreCompileInputs.cache
+C:\Users\wefqi\Lewis\net-programming\windows_form_assignment\windows_form\windows_form\obj\Debug\windows_form.exe
+C:\Users\wefqi\Lewis\net-programming\windows_form_assignment\windows_form\windows_form\obj\Debug\windows_form.pdb
