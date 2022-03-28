@@ -54,6 +54,8 @@
             this.rtbinstruction = new System.Windows.Forms.RichTextBox();
             this.btnsubmit = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblclist = new System.Windows.Forms.Label();
+            this.ddclist = new System.Windows.Forms.ComboBox();
             this.gbcustinfo.SuspendLayout();
             this.gbdriver.SuspendLayout();
             this.gbpizzasize.SuspendLayout();
@@ -175,7 +177,7 @@
             // gbpizzasize
             // 
             this.gbpizzasize.Controls.Add(this.lstsize);
-            this.gbpizzasize.Location = new System.Drawing.Point(359, 28);
+            this.gbpizzasize.Location = new System.Drawing.Point(326, 114);
             this.gbpizzasize.Name = "gbpizzasize";
             this.gbpizzasize.Size = new System.Drawing.Size(172, 136);
             this.gbpizzasize.TabIndex = 8;
@@ -193,7 +195,7 @@
             "XL Large",
             "Stadium",
             "Party"});
-            this.lstsize.Location = new System.Drawing.Point(6, 21);
+            this.lstsize.Location = new System.Drawing.Point(23, 21);
             this.lstsize.Name = "lstsize";
             this.lstsize.Size = new System.Drawing.Size(143, 100);
             this.lstsize.TabIndex = 0;
@@ -204,7 +206,7 @@
             this.gbtoppings.Controls.Add(this.chkveggie);
             this.gbtoppings.Controls.Add(this.chkmeat);
             this.gbtoppings.Controls.Add(this.chkcheese);
-            this.gbtoppings.Location = new System.Drawing.Point(610, 28);
+            this.gbtoppings.Location = new System.Drawing.Point(611, 114);
             this.gbtoppings.Name = "gbtoppings";
             this.gbtoppings.Size = new System.Drawing.Size(159, 136);
             this.gbtoppings.TabIndex = 9;
@@ -289,7 +291,7 @@
             // lblinstruction
             // 
             this.lblinstruction.AutoSize = true;
-            this.lblinstruction.Location = new System.Drawing.Point(281, 180);
+            this.lblinstruction.Location = new System.Drawing.Point(270, 262);
             this.lblinstruction.Name = "lblinstruction";
             this.lblinstruction.Size = new System.Drawing.Size(122, 16);
             this.lblinstruction.TabIndex = 11;
@@ -297,7 +299,7 @@
             // 
             // rtbinstruction
             // 
-            this.rtbinstruction.Location = new System.Drawing.Point(285, 199);
+            this.rtbinstruction.Location = new System.Drawing.Point(270, 288);
             this.rtbinstruction.Name = "rtbinstruction";
             this.rtbinstruction.Size = new System.Drawing.Size(500, 104);
             this.rtbinstruction.TabIndex = 12;
@@ -316,18 +318,39 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::windows_form.Properties.Resources.dinicos_pizza;
-            this.pictureBox1.Location = new System.Drawing.Point(372, 320);
+            this.pictureBox1.Location = new System.Drawing.Point(300, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(136, 118);
+            this.pictureBox1.Size = new System.Drawing.Size(132, 78);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
+            // 
+            // lblclist
+            // 
+            this.lblclist.AutoSize = true;
+            this.lblclist.Location = new System.Drawing.Point(451, 24);
+            this.lblclist.Name = "lblclist";
+            this.lblclist.Size = new System.Drawing.Size(127, 16);
+            this.lblclist.TabIndex = 15;
+            this.lblclist.Text = "Previous Customers";
+            this.lblclist.Click += new System.EventHandler(this.lblclist_Click);
+            // 
+            // ddclist
+            // 
+            this.ddclist.FormattingEnabled = true;
+            this.ddclist.Location = new System.Drawing.Point(584, 16);
+            this.ddclist.Name = "ddclist";
+            this.ddclist.Size = new System.Drawing.Size(186, 24);
+            this.ddclist.TabIndex = 16;
+            this.ddclist.SelectedIndexChanged += new System.EventHandler(this.ddclist_SelectedIndexChanged);
             // 
             // frmdelivery
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ddclist);
+            this.Controls.Add(this.lblclist);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnsubmit);
             this.Controls.Add(this.rtbinstruction);
@@ -384,6 +407,8 @@
         private System.Windows.Forms.RichTextBox rtbinstruction;
         private System.Windows.Forms.Button btnsubmit;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblclist;
+        private System.Windows.Forms.ComboBox ddclist;
     }
 }
 

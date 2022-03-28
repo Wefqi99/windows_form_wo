@@ -37,6 +37,54 @@ namespace windows_form
             
         }
 
+        public List<string> GetCustomerName()
+        {
+            List<string> result = new List<string>();
+            foreach (Customer customer in customers)
+            {
+                result.Add(customer.Cname);
+            }
+            return result;
+        }
+
+        public Dictionary<string, string> GetDataForCustomerByName(string cname)
+        {
+            Dictionary<string, string> result = new Dictionary<string, string>();
+            string toppingString;
+            foreach (Customer customer in customers)
+            {
+                if (customer.Cname.Equals(cname))
+                {
+                    result.Add("Date", customer.Date);
+                    result.Add("Customer Name", customer.Cname);
+                    result.Add("Address", customer.Address);
+                    result.Add("Driver Name", customer.Dname);
+                    result.Add("Time-Out", customer.Time);
+                    result.Add("Size", customer.Size);
+                    result.Add("Information", customer.Instructions);
+                    result.Add("Tip", Convert.ToString(customer.Tip));
+                    toppingString = "";
+                    if (customer.Toppings.Contains(0))
+                    {
+                        toppingString = toppingString + "0 ";
+                    }
+                    if (customer.Toppings.Contains(1))
+                    {
+                        toppingString = toppingString + "1 ";
+                    }
+                    if (customer.Toppings.Contains(2))
+                    {
+                        toppingString = toppingString + "2 ";
+                    }
+                    toppingString = toppingString.Trim();
+                    result.Add("Toppings", toppingString);
+                    return result;
+
+                }
+            }
+            return null;
+        }
+
 
     }
 }

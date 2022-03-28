@@ -161,7 +161,7 @@ namespace windows_form
             //return String.Format("Date: {0} Customer: {1} Address: {2} Size: {3} Topping: {4} Driver: {5) Time-Out: {6} Tip: {7} Special Instructions: {8}", Date, Cname, Address, Size, ToppingsAsString(), Dname, Time, TipAsString(), Instructions);
             //return String.Format("Topping: {0}, Tip: {1}, Customer Name: {2}, Date: {3}, Address: {4}, Driver: {5}, Time: {6}, Size: {7}, Instructions: {8}", ToppingsAsString(), TipAsString(), Cname, Date, Address, Dname, Time, Size, Instructions);
             //return String.Format("Size: {0}, Topping: {1}, Date {2} Customer: {3}, Address: {4}, Driver: {5}, Time-Out: {6}, Tip: {7}, Instructions: {8}", Size, ToppingsAsString(), Date, Cname,Address, Dname, Time, TipAsString(), Instructions);
-            return String.Format("Date: {0}\n Customer: {1}\n Address {2}\n \n Pizza Size: {3}\n Toppings: {4}\n \n Driver: {5}\n Time-Out: {6}\n Tip: {7}\n \n Instructions: {8}\n \n", Date, Cname, Address, Size, ToppingsAsString(), Dname, Time, TipAsString(), Instructions);
+            return String.Format(" ***************\n  Dinicos Pizza \n ***************\n Date: {0}\n Customer: {1}\n Address {2}\n \n Pizza Size: {3}\n Toppings: {4}\n \n Driver: {5}\n Time-Out: {6}\n Tip: {7}\n \n Instructions: {8}\n ----------------------- \n", Date, Cname, Address, Size, ToppingsAsString(), Dname, Time, TipAsString(), Instructions);
 
         }
 
